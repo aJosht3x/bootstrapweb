@@ -1,28 +1,73 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>Welcome</title>
-<link rel="stylesheet" href="style.css>
-</head>
-<body>
-<div class="banner">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Web ²</title>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Movies</a></li>
+      </ul>
+    </div>
 
-
-
-
-</body>
-<style>
-*{
-margin: 0;
-padding: 0;
-}
-.banner{
-width: 100%;
-height: 100vh;
-background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(_fhdocean819.jpg);
-background-size: cover;
-background-position: center;
-}
-</style>
-
-
+      <img src="back.jpg">
+    <style>
+    
+    .body{
+      font-family: Times New Roman;
+    }
+      *{
+        box-sizing: border-box;
+      }
+      html,body{
+        margin:0;
+        padding:0;
+      }
+      .nav-bar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width:100%;
+      }
+      .nav-bar a{
+        font-family: Courier New;
+        width:100%;
+        text-decoration: none;
+        color: black;
+        display: block;
+      }
+      .nav-bar > ul{
+        list-style-type: none;
+        margin:0;
+        padding: 0;
+      }
+      .nav-bar>ul>li>a{
+        padding:10px;
+        background: lightgrey;
+      }
+      .nav-bar>ul>li>a:hover{
+        background:#173459;
+        color: gold;
+      }
+      .nav-bar .active{
+        background: #173459;
+        color: gold;
+      }
+      .nav-bar li{
+        border-right: 1px solid #333;
+      }
+      .nav-bar li:last-child{
+        border: none;
+      }
+      .nav-bar>ul>li{
+        float: left;
+        width: 106px;
+        text-align: center;
+      }
+    </style>
+  </body>
 </html>
