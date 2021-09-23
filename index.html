@@ -1,53 +1,73 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Web ²</title>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Movies</a></li>
+      </ul>
+    </div>
 
-<head>
-  <title>Basic Bootstrap Template</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<div class="carousel slide" id="myslider" data-ride="carousel">
-<body>
-<ul class="nav nav-pills"> 
-  <li class="active"><a href="Wwe.html"><span class="glyphicon glyphicon-home"></span>  Home</a></li> 
-  <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li> 
-  <li class="active"><a href="#"><span class="glyphicon glyphicon-envelope"></span> Messages</a></li> 
-<a href="#" class="nav-brand">
-<img src="download.png">
-</a>
- </ul> 
- <style>
-.ul{
-margin:right;
-}
-.nav-brand{
-
-
-
-</style>
-<div class="jumbotron">
-<div class="container">
-<h1>Helloword</h1>
-<p>its been long but we cn make it.</p>
-
-
-</div>
-</div>
-
-
-<ul class="pager">
-<li><a href="Jst.html">Previous</a></li>
-<li><a href="#">Next</a></li>
-</div>
-
-
-
-
-
-
-
-
-</body>
-
+      <img src="back.jpg">
+    <style>
+    
+    .body{
+      font-family: Times New Roman;
+    }
+      *{
+        box-sizing: border-box;
+      }
+      html,body{
+        margin:0;
+        padding:0;
+      }
+      .nav-bar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width:100%;
+      }
+      .nav-bar a{
+        font-family: Courier New;
+        width:100%;
+        text-decoration: none;
+        color: black;
+        display: block;
+      }
+      .nav-bar > ul{
+        list-style-type: none;
+        margin:0;
+        padding: 0;
+      }
+      .nav-bar>ul>li>a{
+        padding:10px;
+        background: lightgrey;
+      }
+      .nav-bar>ul>li>a:hover{
+        background:#173459;
+        color: gold;
+      }
+      .nav-bar .active{
+        background: #173459;
+        color: gold;
+      }
+      .nav-bar li{
+        border-right: 1px solid #333;
+      }
+      .nav-bar li:last-child{
+        border: none;
+      }
+      .nav-bar>ul>li{
+        float: left;
+        width: 106px;
+        text-align: center;
+      }
+    </style>
+  </body>
 </html>
